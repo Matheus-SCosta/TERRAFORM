@@ -2,7 +2,7 @@ provider "aws" {
   region = "us-east-1"
   assume_role {
     role_arn     = "arn:aws:iam::##########:role/TerraformRole" 
-    session_name = "terraform_cross_account_access"
+    session_name = "terraform"
   }
 
 }
@@ -10,10 +10,10 @@ provider "aws" {
 terraform {
   backend "s3" {
     bucket         = "terraform-state-backend-new"
-    key            = "r53/ambiente-lab.tfstate"
+    key            = "ambiente-lab.tfstate"
     region         = "us-east-1"
     encrypt        = true
-    dynamodb_table = "terraform_state"
+    dynamodb_table = "terraform"
     role_arn = "arn:aws:iam::##########:role/TerraformRole" 
   }
 }
