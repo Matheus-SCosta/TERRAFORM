@@ -8,7 +8,7 @@ workflows:
       steps:
       - init
       - run: echo "INICIANDO PLAN PLAN PLAN PLAN"
-      - plan -d AWS/configurando_role_terraform
+      - run: plan -d AWS/configurando_role_terraform
     apply:
       steps:
       - run: echo "INICIANDO APPLY APPLY APPLY APPLY"
