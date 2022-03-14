@@ -17,16 +17,16 @@ resource "aws_dynamodb_table" "terraform_locks" {
 }
 
 
-resource "aws_s3_bucket_object" "object" {
-  bucket = aws_s3_bucket.lab-keys-dev.bucket
-  key    = "scripts/${local.name_file}"
-  source = "/home/local/CONDUCTOR/m.silva/Documentos/VSCODE/${local.name_file}"
+#resource "aws_s3_bucket_object" "object" {
+#  bucket = aws_s3_bucket.lab-keys-dev.bucket
+#  key    = "scripts/${local.name_file}"
+#  source = "/home/local/CONDUCTOR/m.silva/Documentos/VSCODE/${local.name_file}"
 
   # The filemd5() function is available in Terraform 0.11.12 and later
   # For Terraform 0.11.11 and earlier, use the md5() function and the file() function:
   # etag = "${md5(file("path/to/file"))}"
   #etag = filemd5("/home/local/CONDUCTOR/m.silva/Documentos/VSCODE/${local.name_file}")
-}
+#}
 
 
 resource "aws_s3_bucket" "tfstate-backend" {
