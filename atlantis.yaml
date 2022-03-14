@@ -11,6 +11,6 @@ workflows:
       - plan
     apply:
       steps:
-      - run: echo "INICIANDO APPLY APPLY APPLY APPLY"
+      - run: echo "INICIANDO APPLY APPLY APPLY APPLY APLY SEMPRE"
       - apply
     
