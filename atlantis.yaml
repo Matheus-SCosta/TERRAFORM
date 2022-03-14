@@ -9,5 +9,8 @@ workflows:
       - init
       - run: echo "INICIANDO PLAN PLAN PLAN PLAN"
       - plan
-
+    apply:
+      steps:
+      - run: echo "INICIANDO APPLY APPLY APPLY APPLY"
+      - apply
     
