@@ -9,6 +9,7 @@ workflows:
       - init
       - run: echo "Executando terraform plan"
       - plan
+      - apply
     apply:
       steps:
       - init
