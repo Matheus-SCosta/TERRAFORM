@@ -12,4 +12,4 @@ workflows:
     apply:
       steps:
       - run: echo "INICIANDO APPLY APPLY APPLY APPLY"
-      - run: my custom apply command
+    
