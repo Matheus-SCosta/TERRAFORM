@@ -10,9 +10,5 @@ workflows:
       - run: echo "Executando terraform plan"
       - plan
       - apply
-    apply:
-      steps:
-      - init
-      - run: echo "Executando terraform apply, tentando rsrs"
-      - apply
+    
     
