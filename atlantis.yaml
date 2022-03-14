@@ -7,10 +7,10 @@ workflows:
     plan:
       steps:
       - init
-      - run: echo "INICIANDO PLAN PLAN PLAN PLAN"
+      - run: echo "Executando terraform plan"
       - plan
     apply:
       steps:
-      - run: echo "INICIANDO APPLY APPLY APPLY APPLY APLY SEMPRE"
+      - run: echo "Executando terraform apply"
       - apply
     
